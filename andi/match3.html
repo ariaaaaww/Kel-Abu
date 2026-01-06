@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imma 100 - Match 3 (E vs F)</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="dark-mode">
+    <div class="container">
+      <h1>Imma 100 Match 3 (Tim E vs Tim F)</h1>
+      <div id="game-info">
+        <p>
+          Info Pertandingan: <span id="question-number">Match / Ronde</span>
+        </p>
+      </div>
+      <div id="active-team-display">
+        Tim Aktif: <span id="active-team-name">Tim E</span>
+      </div>
+      <div id="game-board">
+        <h2 id="question"></h2>
+        <div id="answers-list" class="answers-grid"></div>
+        <div id="control-area">
+          <button id="strike-btn" class="strike-button">
+            Tambah Strike (X)
+          </button>
+          <button id="switch-team-btn" class="switch-button">
+            Ganti Tim Aktif
+          </button>
+          <button id="next-question-btn" style="display: none">
+            Lanjut Pertanyaan Berikutnya
+          </button>
+        </div>
+      </div>
+
+      <div id="score-container">
+        <div class="team-score-card" id="team1-card">
+          <h3>Tim E</h3>
+          <p>Skor Ronde: <span id="score-team1">0</span></p>
+          <p>Salah (Max 3): <span id="strikes-team1"></span></p>
+          <p>Kemenangan Match: <span id="match-total-team1">0</span></p>
+        </div>
+        <div class="team-score-card" id="team2-card">
+          <h3>Tim F</h3>
+          <p>Skor Ronde: <span id="score-team2">0</span></p>
+          <p>Salah (Max 3): <span id="strikes-team2"></span></p>
+          <p>Kemenangan Match: <span id="match-total-team2">0</span></p>
+        </div>
+      </div>
+
+      <div id="message-board"><p id="message"></p></div>
+    </div>
+    <script src="script_match3.js"></script>
+  </body>
+</html>
