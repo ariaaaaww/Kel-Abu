@@ -28,7 +28,7 @@ const allGameData = [
       { text: "Hewan Peliharaan", score: 14, revealed: false },
       { text: "Polisi", score: 9, revealed: false },
       { text: "Hantu", score: 1, revealed: false },
-      { text: "Tidak ada Isi", score: 1, revealed: false },
+      { text: "Abu", score: 100000, revealed: false },
     ],
   },
 ];
